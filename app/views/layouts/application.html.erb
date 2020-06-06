@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>T7App</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag "//www.google.com/jsapi", "chartkick" %>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+  </head>
+
+  <body>
+    <div class="header">
+      <h2 class="header_title">Keep Smart</h2>
+      <div class="header_right">
+        <% if session[:user_id] %>
+          <% current_user = User.find_by(id: session[:user_id]) %>
+          <span class="header_user">ユーザー：<%= current_user.name %></span>
+          <%= link_to "ログアウト", logout_users_path, method: "post", class: :header_parts  %>
+          <%= link_to "体重入力", new_chart_path, class: :header_parts %>
+        <% else %>
+          <%= link_to "ログイン", login_users_path, class: :header_parts %>
+          <%= link_to "新規登録", new_user_path, class: :header_parts %>
+        <% end %>
+      </div>
+    </div>
+
+    <%= yield %>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+
+<% if @error_message%>
+  <div class="form-error">
+    <%= @error_message %>
+  </div>
+<% end %>
+<div class="login">
+  <div class="login_form">
+    <%= form_with(url: login_users_path, local: true ) do |f| %>
+      <P>ユーザーネーム</p>
+      <%= f.text_field :name  %>
+      <p>パスワード</p>
+      <%= f.password_field :password  %><br>
+      <%= f.submit "ログイン", class: :login_btn %>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.login{
+  background-color: beige;
+}
+.login_form{
+  height: 40vh;
+  width: 50vw;
+  background-color: white;
+  margin: 0 auto;
+  padding-top: 30px;
+  border: 20px solid beige;
+  text-align: center;
+}
+.login_btn{
+  margin-top: 30px;
+  border: 2px solid orange;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+
+.register{
+  background-color: beige;
+}
+.register_content{
+  height: 40vh;
+  width: 50vw;
+  background-color: white;
+  margin: 0 auto;
+  padding-top: 30px;
+  border: 20px solid beige;
+  text-align: center;
+}
+.register_btn{
+  margin-top: 30px;
+  border: 2px solid orange;
+  border-radius: 5px;
+  padding: 5px 10px;
+}

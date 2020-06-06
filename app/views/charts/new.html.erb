@@ -1,0 +1,10 @@
+<div class="input">
+  <div class="input_form">
+    <h3>体重を入力</h3>
+    <%= form_with(model: @weight, local: true) do |f| %>
+      <%= f.text_field :weight, placeholder: "           今日の努力", row: "2" %><br>
+      <%= f.submit "Input", class: :input_btn %>
+    <% end %>
+    <%= link_to "グラフをみる", charts_path, class: :to_chart_btn %>
+  </div>
+</div>
