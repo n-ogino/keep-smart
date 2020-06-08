@@ -13,4 +13,4 @@
 #### 使用言語
 * RUby, Ruby on Rails, Javascript
 
-![イメージ図](/assets/keep_weight.png)
+![イメージ図](https://i.gyazo.com/e6b255507fbb2b76b58200fb8d5d8427.png)
