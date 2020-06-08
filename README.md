@@ -13,4 +13,4 @@
 #### 使用言語
 * RUby, Ruby on Rails, Javascript
 
-！[picture](/naoyaogino/keep_weight.png)
+！[](/assets/keep_weight.png)
