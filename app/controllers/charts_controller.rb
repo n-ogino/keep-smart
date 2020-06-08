@@ -7,8 +7,7 @@ class ChartsController < ApplicationController
   def create
     user = User.find_by("#{session[:user_id]}")
     Chart.create(weight_params)
-    redirect_to root_path
-    # redirect_to charts_path
+    redirect_to charts_path
   end
 
   def index
