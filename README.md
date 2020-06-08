@@ -1,24 +1,6 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+#Keep Weight
+####概要
+体重記録アプリケーションbr
+毎日の体重を入力することで、記録をつけられます。br
+記録をつけることで、毎日の体調管理ができます。br
+加えて、日々の変化をグラフ化することで毎日の努力が目に見えます。br
