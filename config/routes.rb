@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  root to: "charts#new"
+  root to: "charts#home"
   
   resources :users, only: [:new, :create] do
     collection do  
@@ -10,6 +10,10 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :charts, only: [:new, :create, :index] 
+  resources :charts, only: [:new, :create, :index] do
+    collection do
+      get "home", to: "charts#home"
+    end
+  end
 
 end

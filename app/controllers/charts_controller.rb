@@ -1,5 +1,8 @@
 class ChartsController < ApplicationController
 
+  def home
+  end
+  
   def new
     @weight = Chart.new
   end
