@@ -2,11 +2,11 @@
   <div class="register_content">
     <%= form_with(model: @user, local: true) do |f| %>
       <%= f.label :ユーザーネーム %><br>
-      <%= f.text_field :name  %><br>
+      <%= f.text_field :name, placeholder: "3文字以上"  %><br>
       <%= f.label :パスワード %><br>
-      <%= f.text_field :password %><br>
+      <%= f.text_field :password, placeholder: "3文字以上" %><br>
       <%= f.label :身長 %><br>
-      <%= f.number_field :height %><br>
+      <%= f.number_field :height, placeholder: "例：170  (単位はcm)" %><br>
       <%= f.submit "新規登録", class: :register_btn %>
     <% end %>
   </div>

@@ -24,8 +24,13 @@
           <%= link_to "ログイン", login_users_path, class: :header_parts %>
           <%= link_to "新規登録", new_user_path, class: :header_parts %>
         <% end %>
-      </div>
+      </div> 
     </div>
+    <% if flash[:notice] %>
+      <div class="flash">
+      <%= flash[:notice] %>
+      </div>
+     <% end %>
 
     <%= yield %>
   </body>

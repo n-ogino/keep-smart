@@ -28,8 +28,12 @@ class ChartsController < ApplicationController
 
   def bmi_calc(weights, height)
     last = weights.last
-    calc_height = height / 100.to_f
-    bmi = last / calc_height / calc_height
+    if last.nil?
+      render new_chart_path
+    else
+      calc_height = height / 100.to_f
+      bmi = last / calc_height / calc_height
+    end
   end
 
 

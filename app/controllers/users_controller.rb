@@ -28,10 +28,8 @@ class UsersController < ApplicationController
       flash[:notice] = "ログインしました"
       redirect_to new_chart_path
     else
-      @error_message="入力情報が間違っています"
-      @name = params[:name]
-      @password = params[:password]
-      render login_users_path
+      flash[:notice]="入力情報が間違っています"
+      render "users/login_form"
     end
   end
 
