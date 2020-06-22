@@ -1,0 +1,47 @@
+// Place all the styles related to the comments controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.wrapper {
+  background-color: lightgray;
+  margin: 10px auto
+}
+.contents {
+  height: 90vh;
+  width: 90vw;
+  background-color: white;
+  display: flex;
+}
+.graph{
+  height: 77vh;
+  width: 62vw;
+  border: 1px solid beige
+}
+#myBarChart {
+  // height: 300px;
+  // width: 300px;
+  
+}
+.comments {
+  margin-left: 20px;
+  border: 1px solid beige
+}
+.comment {
+  height: 70vh;
+  width: 22vw;
+  overflow: scroll;
+}
+.comment_box {
+  width: 17vw;
+  height: 10vh;
+  border: 1px solid lightgray;
+  margin: 0.5vh 1vw;
+  padding: 1px 10px;
+}
+.comment_info {
+  list-style: none;
+  display: flex;
+  float: right;
+  font-size: 12px;
+  line-height: 8vh;
+}

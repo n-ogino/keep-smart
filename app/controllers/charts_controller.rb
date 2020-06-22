@@ -10,6 +10,7 @@ class ChartsController < ApplicationController
   def create
     user = User.find_by("#{session[:user_id]}")
     Chart.create(weight_params)
+    total_wight(weight_params)
     redirect_to charts_path
   end
 

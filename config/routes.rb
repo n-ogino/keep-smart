@@ -16,4 +16,6 @@ Rails.application.routes.draw do
     end
   end
 
+  resources :comments, only: [:index, :new, :create, :delete]
+
 end
